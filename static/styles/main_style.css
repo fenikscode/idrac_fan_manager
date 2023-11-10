@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Roboto-Mono;
+    src: url(../roboto_mono/RobotoMono-VariableFont_wght.ttf);
+}
+*
+{
+    font-family: Roboto-Mono;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+}
+header
+{
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    position: relative;
+    width: 100%;
+    color: white;
+    background-color: #0076CE;
+}
+header img
+{
+    width: 15%;
+    padding: 0.7em;
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+form label
+{
+    font-size: 1em;
+    font-weight: 700;
+}

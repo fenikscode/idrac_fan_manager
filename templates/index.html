@@ -11,8 +11,63 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="theme-color" content="#ffffff">
         <title>iDRAC Fan Control</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css')}}">
+        <script src="{{ url_for('static', filename='js/justgage.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/raphael-2.1.4.min.js') }}"></script>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <header>
+            <img src="{{ url_for('static', filename='dell.svg')}}">
+            <h3>iDRAC7 - Fan Control Panel</h3>
+        </header>
+        <section id="fan_status">
+            <div id="gauge"></div>
+            <div id="gauge1"></div>
+            <div id="gauge2"></div>
+            <div id="gauge3"></div>
+        </section>
+        <section id="fan_control">
+            <form>
+                <label>Automatic Fan Control</label>
+                <input type="checkbox">
+                <input type="submit" value="Wykonaj">
+            </form>
+        </section>
+        <section id="fan_termalcurve">
+            
+        </section>
+        <footer>
+
+        </footer>
+        <script>
+            var gauge_test = new JustGage({
+                id: "gauge",
+                value: 69,
+                min: 0,
+                max: 100,
+                title: "Lorem Ipsum"
+            })
+            var gauge_test1 = new JustGage({
+                id: "gauge1",
+                value: 49,
+                min: 0,
+                max: 100,
+                title: "Lorem Ipsum"
+            })
+            var gauge_test2 = new JustGage({
+                id: "gauge2",
+                value: 19,
+                min: 0,
+                max: 100,
+                title: "Lorem Ipsum"
+            })
+            var gauge_test3 = new JustGage({
+                id: "gauge3",
+                value: 39,
+                min: 0,
+                max: 100,
+                title: "Lorem Ipsum"
+            })
+        </script>
     </body>
 </html>
